@@ -5,9 +5,11 @@
     <title>My websiste</title>
 </head>
 <body>
-    <h1>{{ num }}</h1>
+    <h1>Random number is :{{ num }}</h1>
+    <a href="{{ url_for('blog', number=num )}}">Go to blog</a>
 </body>
 <footer>
+
     Copyright @ {{ currentyear }}
 </footer>
 </html>
